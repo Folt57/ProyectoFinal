@@ -1,0 +1,376 @@
+* {
+	font-family: 'Khand', sans-serif;
+	text-decoration: none;
+}
+
+body{
+	margin:0px;
+	background-image: url(../img/fondo.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+}
+
+/*Título*/
+
+.titulo {
+	text-align: center;
+	-webkit-text-stroke: 0.1px black;
+	color: white;
+	font-size: 50px;
+	padding-top: 80px;
+	text-shadow: grey 0 5px;
+	animation: bote 1s infinite ease-in-out;
+}
+
+/*Menú*/
+
+nav {
+	font-size: 20px;
+	background-color: #eee;
+	width: 100%;
+	height: 40px;
+	overflow:hidden;
+	opacity: 0.7;
+	transition-duration: 0.6s;   
+	position: fixed;
+	margin-top: -95	px;
+	z-index: 1;
+}
+
+nav:hover {
+	opacity: 1;
+	z-index: 1;
+}
+
+ul {
+	margin: 0px;
+	display: flex;
+	z-index: 1;
+}
+
+li {
+	float:left;
+	width: 18%;
+	text-align: center;
+	color: crimson;
+	list-style: none;
+	margin-top:-30px;
+	transition-duration: 0.6s;
+	z-index: 1;
+}
+
+li:hover {
+	margin-top:15px;
+	z-index: 1;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	z-index: 1;
+}
+
+.capa_ico {
+	width: 100%;
+	height: 25px;
+	float:left;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	cursor:pointer;
+	position:relative;
+	top:-15px;
+	z-index: 1;
+}
+
+#titulo {
+	width: 100%;
+	text-align: center;
+	-webkit-text-stroke: 0.1px black;
+	color: white;
+	font-size: 70px;
+	text-shadow: grey 0 5px;
+	padding-bottom: 140px;
+	padding-top: 140px;
+	z-index: 0;
+	animation: triangulo 3s infinite linear;
+}
+
+/*Quienes Somos*/
+
+.textoQuienes {
+	width: auto;
+	height: auto;
+	margin: 30px;
+	padding: 0px 15px;
+	font-size: 25px;
+	color: black;
+	background-color: lightgrey;
+	border: 5px solid ghostwhite;
+	border-radius: 10px;
+	box-shadow: grey 0 5px;}
+
+/*Instalaciones*/
+
+.textoInstalaciones {
+	width: auto;
+	height: auto;
+	display: flex;
+	margin: 30px;
+	padding: 0px 15px;
+	font-size: 25px;
+	color: black;
+	background-color: lightgrey;
+	border: 5px solid ghostwhite;
+	border-radius: 10px;
+	box-shadow: grey 0 5px;
+}
+
+.oficinas {
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.oficinas img {
+	padding: 15px;
+	height: 310px;
+	width: 410px;
+}
+
+.oficinas p {
+	padding: 15px;
+}
+
+/*Servicios*/
+
+.contenedorServicios {
+	margin: 30px;
+	padding: 0px 15px;
+	font-size: 25px;
+	color: black;
+	background-color: lightgrey;
+	border: 5px solid ghostwhite;
+	border-radius: 10px;
+	box-shadow: grey 0 5px;
+}
+
+.tipoServicios {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.tipoServicios a {
+	cursor: pointer;
+}
+
+.tipoServicios a:hover {
+	transform: scale(1.2);
+	transition-duration: 0.5s;
+}
+
+.textoServicios {
+	height: 200px;
+	padding: 10px 0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*Productos*/
+
+.contenedorProductos {
+	margin: 30px;
+	padding: 0px 15px;
+	font-size: 25px;
+	color: black;
+	background-color: lightgrey;
+	border: 5px solid ghostwhite;
+	border-radius: 10px;
+	box-shadow: grey 0 5px;
+}
+
+.imgProductos {
+	text-align: center;
+	width: 500px;
+	height: 320px;
+	overflow: hidden;
+	margin: 50px auto;
+}
+
+.imgProductos img {
+	width: 500px;
+	height: 320px;
+}
+
+.textoProductos {
+	text-align: center;
+}
+
+/* Formulario */
+
+.contenedor {
+  width: auto;
+  padding: 15px;
+}
+
+.formulario {
+	height: auto;
+	width: auto;
+  background-color: lightgrey;
+  margin: 30px 320px;
+	padding: 20px 15px;
+	border: 5px solid ghostwhite;
+	border-radius: 10px;
+	box-shadow: grey 0 5px;
+}
+
+.formulario h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px;
+}
+
+.input-contenedor img {
+  padding-top: 4px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="tel"] {
+  text-align: center;
+  font-size: 20px;
+  width: 90%;
+  padding: 10px;
+  border: none;
+}
+
+.input-contenedor {
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0px 10px;
+	height: 60px;
+  margin-bottom: 15px;
+ 	border: 1px solid #aaa;
+ 	background-color: white;
+}
+
+#mapa {
+	height: 210px;
+}
+
+.button {
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: cadetblue;
+}
+
+.contenedor p {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600px;
+}
+
+.link:hover {
+  color: cadetblue;
+}
+
+textarea {
+	width: 100%;
+	height: 90%;
+	font-size: 20px;
+	resize: vertical;
+	border: none;
+}
+
+#formServicios {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* Keyframes */
+
+@keyframes bote {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes triangulo {
+    0% {
+        transform: translate(0px, 100px);
+    }
+
+    25% {
+        transform: translate(100px, 0px);
+    }
+
+    50% {
+        transform: translate(0px, -100px);
+    }
+
+    75% {
+        transform: translate(-100px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 100px);
+    }
+}
+
+/* Media Queries */
+
+/* He intentado poner las Media Queries pero me es imposible, me generan errores todo el rato. */
+
+@media screen and (max-width:1000px) {
+
+}
+
+@media screen and (max-width:800px) {
+    
+}
+
+@media screen and (max-width:700px) {
+    
+}
+
+@media screen and (max-width:450px) {
+    
+}
+
+@media screen and (max-width:340px) {
+    
+}

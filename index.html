@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="icon" type="image/png" href="icon/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+    <title id="txtInicio">Inicio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <div class="capa_ico">
+                    <a href="#inicio" onclick="menu1()"><img class="icon" src="icon/home.png"></a>
+                </div>
+                Inicio
+            </li>
+            <li>
+                <div class="capa_ico">
+                    <a href="#quienesSomos" onclick="menu2()"><img class="icon" src="icon/group.png"></a>
+                </div>
+                Quienes Somos
+            </li>
+            <li>
+                <div class="capa_ico">
+                    <a href="#instalaciones" onclick="menu3()"><img class="icon" src="icon/oficinas.png"></a>
+                </div>
+                Instalaciones
+            </li>
+            <li>
+                <div class="capa_ico">
+                    <a href="#servicios" onclick="menu4()"><img class="icon" src="icon/servicios.png"></a>
+                </div>
+                Servicios
+            </li>
+            <li>
+                <div class="capa_ico">
+                    <a href="#productos" onclick="menu5()"><img class="icon" src="icon/productos.png"></a>
+                </div>
+                Productos
+            </li>
+            <li>
+                <div class="capa_ico">
+                   <a href="#contacto" onclick="menu6()"><img class="icon" src="icon/contacto.png"></a>
+                </div>
+                Contacto
+            </li>
+        </ul>
+    </nav>
+
+    <div id="titulo">
+        <h1 id="inicio">Dialdi</h1>
+    </div>
+
+
+    <p></p>
+
+
+    <div class="titulo">
+        <h1 id="quienesSomos">Quienes Somos</h1>
+    </div>
+
+    <div class="textoQuienes">
+        <p>Dialdi es la empresa lider a nivel mundial en servicios de consultoría, tecnología y videojuegos. La empresa está a la vanguardia de la innovación, para de esta forma abordar toda la gama de oportunidades de los clientes en el mundo digital.</p>
+        <p>Contamos con dos grandes equipos, los cuales son muy resolutivos y siempre logran alcanzar los objetivos que se les proponen. El primer equipo es el de informática y comunicaciones y el otro es el de videojuegos.</p>
+        <p>En Dialdi estamos orgullosos de nuestros trabajadores y muy agradecidos con nuestros clientes, ya que sin ellos y sin su confianza nunca habríamos conseguido ser líderes en tecnología.</p>
+    </div>
+
+
+    <p></p>
+
+
+    <div class="titulo">
+        <h1 id="instalaciones">Instalaciones</h1>
+    </div>
+
+    <div class="textoInstalaciones">
+        <div class="oficinas">
+            <img src="img/oficinas.jpg">
+        </div>
+        <div class="oficinas">
+            <p>En Dialdi contamos con un complejo de oficinas excepcionales situado en Avenida de Europa Nº19 con capacidad hasta 520 trabajadores.</p>
+            <p>Dispone de salas de descanso, comedor y parking subterraneo de dos alturas donde poder estacionar el vehículo.</p>
+        </div>
+    </div>
+
+    <div class="textoInstalaciones">
+        <div class="oficinas">
+            <p>El complejo consta de 4 edificios consultoría, uno para desarrollo de videojuegos, uno para venta de dispositivos electrónicos y otro para diseño de aplicaciones.</p>
+            <p>Las salas de trabajo están divididas en equipos de 12 personas y cuentan con el equipamiento necesario para que el trabajador pueda desempeñar las funciones que le son solicitadas por la empresa.</p>
+            <p>Contamos con un servicio de guardería disponible hasta los 6 años, al cual los padres pueden hacer uso y así trabajar sin preocupación alguna.</p>
+        </div>
+        <div class="oficinas">
+            <img src="img/interiorOficinas.jpg">
+        </div>
+    </div>
+
+
+    <p></p>
+
+
+    <div class="titulo">
+        <h1 id="servicios">Servicios</h1>
+    </div>
+
+    <div class="contenedorServicios">
+        <div class="tipoServicios">
+            <a onclick="txtConsultoria()">Consultoría</a>
+            
+            <a onclick="txtVideojuegos()">Desarrollo de Videojuegos</a>
+            
+            <a onclick="txtDispositivos()">Venta de Dispositivos</a>
+            
+            <a onclick="txtDisenoApps()">Diseño de Aplicaciones</a>
+        </div>
+
+        <div class="textoServicios">
+            <p id="txtServicios"><b>Haga click en el servicio que desea para obtener información.</b></p>
+        </div>
+    </div>
+
+
+    <p></p>
+
+
+    <div class="titulo">
+        <h1 id="productos">Productos</h1>
+    </div>
+
+    <div class="contenedorProductos">
+        <div class="imgProductos">
+            <a onclick="txtTorres()"><img src="img/foto1.jpg" class="mySlides"></a>
+            <a onclick="txtMonitores()"><img src="img/foto2.jpg" class="mySlides"></a>
+            <a onclick="txtPerifericos()"><img src="img/foto3.jpg" class="mySlides"></a>
+            <a onclick="txtTeclados()"><img src="img/foto4.jpg" class="mySlides"></a>
+        </div>
+        <div class="textoProductos">
+            <p id="txtProductos">Haga click en la imagen del tipo de producto que desea.</p>
+        </div>
+    </div>
+
+
+    <p></p>
+
+
+    <div class="titulo">
+        <h1 id="contacto">Contacto</h1>
+    </div>
+
+    <form name="contacto" method="post" action="mailto:raul.rodriguez@universidadeuropea.es" class="formulario" onsubmit="return validar()">
+        <h1>DATOS</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                Dirección: Universidad Europea de Madrid, Campus: Villaviciosa de Odón, Calle: Tajo S/N Villaviciosa de Odón, Municipio: Madrid.
+            </div>
+
+            <div class="input-contenedor">
+                Teléfono: 91 211 56 73
+            </div>
+
+            <div class="input-contenedor">
+                Mail: dialdi@gmail.com
+            </div>
+
+            <div id="mapa" class="input-contenedor">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.6149841213196!2d-3.92127148454001!3d40.373060679370305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd419031a94d45e5%3A0x375a8b6ca7a1dc4c!2sUniversidad%20Europea%20de%20Madrid%20(Campus%20Villaviciosa%20de%20Od%C3%B3n)!5e0!3m2!1ses!2ses!4v1625428901272!5m2!1ses!2ses" width="800" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <div class="input-contenedor">
+                <img class="icon" src="icon/usuario.png">
+                <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+
+            <div class="input-contenedor">
+                <img class="icon" src="icon/correo.png">
+                <input type="text" id="mail" placeholder="Correo Electrónico">
+            </div>
+
+            <div class="input-contenedor">
+                <img class="icon" src="icon/telefono.png">
+                <input type="tel" id="telefono" placeholder="Teléfono">
+            </div>
+
+            <div id="formServicios" class="input-contenedor">
+                <img class="icon" src="icon/servicios.png">
+                <input type="checkbox" name="consultoria" id="servicio1">Consultoría
+                <input type="checkbox" name="videojuegos" id="servicio2">Desarollo de Videojuegos
+                <input type="checkbox" name="venta" id="servicio3">Venta de Dispositivos
+                <input type="checkbox" name="aplicaciones" id="servicio3">Diseño de Aplicaciones
+            </div>
+
+            <div class="input-contenedor">
+                <textarea placeholder="Escriba un comentario si lo cree necesario."></textarea>
+            </div>
+            <input type="submit" value="Enviar" class="button">
+        </div>
+    </form>
+<script src="js/main.js"></script>
+</body>
+</html>
